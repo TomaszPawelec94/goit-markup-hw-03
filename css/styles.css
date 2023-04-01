@@ -46,6 +46,7 @@ header {
 
 .top-links {
   display: flex;
+  margin-left: 94px;
 }
 
 .logo-and-links {
@@ -132,9 +133,14 @@ ul {
 .link-contact:last-child {
   margin-right: 0;
 }
-.link-containe .link:is(:hover, :focus) {
+.link:is(:hover, :focus) {
   color: var(--brand-color);
 }
+
+.top-links:is(:hover, :focus) {
+  color: var(--brand-color);
+}
+
 .link-grey:is(:hover, :focus) {
   color: var(--brand-color);
 }
@@ -150,21 +156,23 @@ ul {
   margin: 0 23px;
 }
 
-.web-logo {
+.logo {
   font-weight: 700;
   font-size: 26px;
-  color: var(--brand-color);
-  font-family: "Raleway" sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.17;
 }
 
-.studio-logo {
-  font-weight: 700;
-  font-size: 26px;
+.studio-black {
   color: var(--black);
-  font-family: "Raleway" sans-serif;
-  line-height: 1.17;
-  margin-right: 93px;
+}
+
+.studio-white {
+  color: var(--background-white);
+}
+
+.web-color {
+  color: var(--brand-color);
 }
 
 .main-header {
@@ -192,12 +200,18 @@ ul {
   font-weight: 700;
   color: var(--background-white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  line-height: 1.875;
+  letter-spacing: 0.06em;
   border-radius: 4px;
   cursor: pointer;
   border: none;
   border-radius: 4px;
   padding: 10px 41px 10px 42px;
   margin-top: 30px;
+}
+
+.what-we-do {
+  margin-top: -94px;
 }
 
 .headline {
@@ -266,13 +280,6 @@ ul {
 .footer-style {
   background-color: var(--main-background);
   padding: 60px 0 60px 0;
-}
-
-.studio-white {
-  color: var(--background-white);
-  font-weight: 700;
-  font-size: 26px;
-  font-family: "Raleway" sans-serif;
 }
 
 .address-style {
